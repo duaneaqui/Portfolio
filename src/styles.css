@@ -531,6 +531,9 @@ strong .type-reveal,
 .station-header .type-reveal,
 .intro-dossier-header .type-reveal {
   position: relative;
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
+  clip-path: inset(0 100% -0.16em 0);
 }
 
 h1 .type-reveal::after,
@@ -1034,7 +1037,9 @@ strong .type-reveal::after,
 
 .project-command-strip div {
   display: grid;
+  grid-template-rows: auto auto;
   align-content: center;
+  justify-items: start;
   min-height: 88px;
   padding: 12px;
   border: 1px solid rgba(245, 255, 185, 0.26);
@@ -1045,17 +1050,20 @@ strong .type-reveal::after,
 
 .project-command-strip span {
   display: block;
+  min-height: 24px;
   color: rgba(225, 251, 255, 0.7);
   font-size: 10px;
+  line-height: 1.2;
   letter-spacing: 0.12em;
 }
 
 .project-command-strip strong {
   display: block;
-  margin-top: 8px;
+  margin-top: 4px;
   color: #f6ffe8;
   font-size: 32px;
   line-height: 1;
+  font-variant-numeric: tabular-nums;
 }
 
 .project-grid {
@@ -3106,14 +3114,14 @@ h1 {
 
 @keyframes typeReveal {
   from {
-    clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 100% -0.16em 0);
     filter: brightness(1.35);
   }
   70% {
     filter: brightness(1.08);
   }
   to {
-    clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 -0.16em 0);
     filter: brightness(1);
   }
 }
