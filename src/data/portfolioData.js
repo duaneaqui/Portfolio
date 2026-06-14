@@ -181,7 +181,9 @@ export const nodes = [
         meta: ["React", "TypeScript", "Vite", "Tailwind CSS", "FastAPI", "SQLite", "SQLAlchemy", "JWT", "OCR"],
         detail: "BudgetAI PH lets users manually track income, expenses, recurring bills, loans, savings goals, and local prices. It includes a dashboard with charts, monthly reports, rule-based AI budget insights, and an OCR-style loan screenshot scanner where users review extracted loan details before saving. It does not use paid bank APIs, GCash/Maya/BPI auto-sync, or unsafe credential scraping, and is designed as a portfolio-ready budgeting app with demo login access for employers.",
         image: "/assets/budget-screenshot.png",
+        logo: "/assets/budget-logo.png",
         logoType: "budget",
+        link: "https://budgettrackerwithai.vercel.app/",
       },
       {
         name: "Automation Lab",
