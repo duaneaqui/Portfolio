@@ -285,7 +285,7 @@ export const nodes = [
       linkedin: "https://www.linkedin.com/in/gerard-duane-aqui-201746245",
       location: "East Kamias, Quezon City, Metro Manila, PH",
       discord: "duane8974",
-      resume: "https://docs.google.com/document/d/1tSr1M0NIEkGbwudpE1q0GPPeZv_Ir00gNfvUm0ugisU/edit?usp=sharing",
+      resume: "https://docs.google.com/document/d/1o9-ktSr6bAeCZR_HeusYmp68tQrwWDABJDwE6tzFBlU/edit?usp=sharing",
     },
     entries: [
       {

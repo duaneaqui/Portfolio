@@ -686,8 +686,13 @@ function ContactStation({ node }) {
               </div>
             ))}
           </div>
-          <a className="resume-link" href={contact.resume} target="_blank" rel="noreferrer">
-            Open Resume
+          <a className="resume-link" href={contact.resume} target="_blank" rel="noreferrer" aria-label="Open updated resume in Google Docs">
+            <span className="resume-link-icon">CV</span>
+            <span>
+              <small>Updated Resume</small>
+              <strong>Open Professional Dossier</strong>
+            </span>
+            <i>OPEN</i>
           </a>
           {copied && <p className="copy-status">{copied}</p>}
         </aside>
