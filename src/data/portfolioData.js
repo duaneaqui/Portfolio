@@ -186,6 +186,15 @@ export const nodes = [
         link: "https://budgettrackerwithai.vercel.app/",
       },
       {
+        name: "Aquila Local",
+        description: "A white-label reputation operations business for U.S. marketing agencies, operated remotely from the Philippines.",
+        meta: ["HTML", "CSS", "JavaScript", "Vercel", "Google Sheets", "Apps Script", "B2B Operations", "Automation"],
+        detail: "Aquila Local is a service-first business site and operator workflow system for white-label reputation operations. The public landing page positions review reply drafts, Google Business Profile post drafts, escalation notes, and monthly reputation reports for small agencies, while the private operating workflow is supported by browser-based generators, CSV trackers, Google Sheets, and Apps Script daily task automation. The MVP is intentionally static and lightweight so the business can validate demand before adding a backend or client portal.",
+        logoType: "aquila",
+        link: "https://aquila-local-ops.vercel.app/",
+        github: "https://github.com/duaneaqui/aquila-local",
+      },
+      {
         name: "Automation Lab",
         description: "Upcoming automation and QA build for test flows, quality dashboards, and deployment checks.",
         meta: ["Automation", "Testing", "Workflow", "Coming Soon"],
@@ -413,5 +422,6 @@ export const projectSubnodeOffsets = [
   [-40, 650],
   [430, 980],
   [900, 620],
-  [1220, 920],
+  [1230, 950],
+  [1540, 570],
 ];
