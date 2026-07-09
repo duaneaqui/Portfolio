@@ -952,8 +952,8 @@ strong .type-reveal::after,
 }
 
 .data-node.active:has(.projects-console) {
-  width: 1080px;
-  min-height: 680px;
+  width: 1160px;
+  min-height: 660px;
   z-index: 6;
 }
 
@@ -961,9 +961,10 @@ strong .type-reveal::after,
   position: absolute;
   left: 0;
   top: 0;
-  width: min(1040px, 82vw);
-  min-height: 640px;
-  padding: 20px;
+  width: min(1120px, 86vw);
+  max-height: min(740px, calc(100vh - 92px));
+  min-height: 610px;
+  padding: 18px;
   border: 1px solid rgba(245, 255, 185, 0.46);
   border-radius: 8px;
   background:
@@ -974,7 +975,9 @@ strong .type-reveal::after,
   background-size: 18px 18px, 18px 18px, auto, auto;
   box-shadow: 0 0 54px rgba(245, 255, 185, 0.12), inset 0 0 34px rgba(154, 240, 255, 0.06);
   color: #efffff;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
   animation: dossierBoot 760ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
@@ -986,6 +989,19 @@ strong .type-reveal::after,
   top: 114px;
   height: 1px;
   background: linear-gradient(90deg, rgba(245, 255, 185, 0.44), rgba(143, 236, 255, 0.18), transparent);
+}
+
+.projects-console::-webkit-scrollbar {
+  width: 5px;
+}
+
+.projects-console::-webkit-scrollbar-track {
+  background: rgba(143, 236, 255, 0.05);
+}
+
+.projects-console::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(245, 255, 185, 0.32);
 }
 
 .projects-header,
@@ -1069,17 +1085,17 @@ strong .type-reveal::after,
 .project-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 18px;
+  gap: 12px;
+  margin-top: 16px;
 }
 
 .project-tile {
   position: relative;
   display: grid;
-  grid-template-rows: auto 1fr auto auto;
-  gap: 12px;
-  min-height: 194px;
-  padding: 14px;
+  grid-template-rows: auto minmax(96px, 1fr) auto auto;
+  gap: 10px;
+  min-height: 226px;
+  padding: 13px;
   border: 1px solid rgba(152, 235, 255, 0.24);
   border-radius: 8px;
   background:
@@ -1172,7 +1188,7 @@ strong .type-reveal::after,
 .project-tile h3 {
   margin: 0;
   color: #f6ffe8;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.14;
 }
 
@@ -1180,13 +1196,19 @@ strong .type-reveal::after,
   margin: 7px 0 0;
   color: rgba(225, 251, 255, 0.72);
   font-size: 12px;
-  line-height: 1.45;
+  line-height: 1.42;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .project-tile-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  max-height: 54px;
+  overflow: hidden;
 }
 
 .project-tile-tags span {
