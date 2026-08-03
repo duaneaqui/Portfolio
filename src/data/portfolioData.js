@@ -195,6 +195,26 @@ export const nodes = [
         github: "https://github.com/duaneaqui/aquila-local",
       },
       {
+        name: "Body System/Patient Unit Atlas",
+        description: "An interactive, scroll-driven medical study interface for Core Zigma that maps body systems and patient units onto cinematic anatomy atlases.",
+        meta: ["React 19", "TypeScript", "Vite 8", "Framer Motion", "GSAP", "Anime.js", "Zustand", "Tailwind CSS"],
+        detail: "Medical Topic Atlas is an interactive, scroll-driven medical study interface for Core Zigma. It maps 12 body systems and clinical patient units onto anatomy-style atlases, with zoom-linked navigation and layered topic drill-downs from system overviews to clinical topics and subtopic cards designed as a cinematic review tool for medical learning.",
+        image: "/assets/medical-topic-atlas-screenshot.png",
+        logo: "/assets/corezigma-logo.png",
+        logoType: "corezigma",
+        link: "https://duaneaqui.github.io/medical-topic-atlas/",
+      },
+      {
+        name: "QGrid Simulator (For YT Video Content Usage)",
+        description: "A browser-based NCLEX-style question simulator that turns quiz decks into a sci-fi clinical training console for nursing education.",
+        meta: ["HTML5", "CSS3", "Vanilla JavaScript", "Canvas 2D", "SheetJS", "Web Animations API", "Node.js"],
+        detail: "R/S QGrid Studio is a browser-based interactive NCLEX-style question simulator for nursing education. It replaces a PowerPoint quiz deck with a sci-fi clinical training console: users filter by nursing process, body system, and subcategory, toggle Regular vs Superlative difficulty, import Excel/CSV/JSON question banks, and work through multiple-choice items with cinematic HUD transitions and answer reveals.",
+        image: "/assets/qgrid-simulator-screenshot.png",
+        logo: "/assets/qgrid-logo.png",
+        logoType: "qgrid",
+        link: "https://duaneaqui.github.io/QGrid.github.io/",
+      },
+      {
         name: "Automation Lab",
         description: "Upcoming automation and QA build for test flows, quality dashboards, and deployment checks.",
         meta: ["Automation", "Testing", "Workflow", "Coming Soon"],
@@ -424,4 +444,6 @@ export const projectSubnodeOffsets = [
   [900, 620],
   [1230, 950],
   [1540, 570],
+  [-1180, 980],
+  [1780, 880],
 ];
